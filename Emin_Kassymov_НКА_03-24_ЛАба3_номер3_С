@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void printGradeDescription(int grade) {
+    switch (grade) {
+        case 1:
+            printf("1 - Очень плохо\n");
+            break;
+        case 2:
+            printf("2 - Плохо\n");
+            break;
+        case 3:
+            printf("3 - Удовлетворительно\n");
+            break;
+        case 4:
+            printf("4 - Хорошо\n");
+            break;
+        case 5:
+            printf("5 - Отлично\n");
+            break;
+        default:
+            printf("Ошибка: Оценка должна быть от 1 до 5.\n");
+            break;
+    }
+}
+
+int main() {
+    int grade;
+
+    printf("Введите оценку (от 1 до 5): ");
+    scanf("%d", &grade);
+
+    printGradeDescription(grade);
+
+    return 0;
+}
